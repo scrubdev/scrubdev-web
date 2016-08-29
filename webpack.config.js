@@ -1,5 +1,6 @@
 "use strict";
-const webpack = require("webpack");
+const Webpack = require("webpack")
+    , ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 const config = {
     entry: "./src/web-src/index.js",
@@ -11,14 +12,18 @@ const config = {
     module: {
         loaders: [
             { test: /\.vue$/, loader: "vue" },
-            { test: /\.js$/, loader: "babel" }
+            { test: /\.js$/, exclude: /node_modules/, loader: "babel" },
+            { test: /\.css$/, loader: "style!css" }
         ]
     },
     plugins: [
-        new webpack.ProvidePlugin({
+        new Webpack.ProvidePlugin({
             $: "jquery",
             jQuery: "jquery",
             IScroll: "iscroll"
+        }),
+        new ExtractTextPlugin({
+            filename: "build.css"
         })
     ]
 };
