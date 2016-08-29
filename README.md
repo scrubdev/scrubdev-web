@@ -7,8 +7,10 @@ Web Frontend for the Automation System Project.
 
 $ git clone git@github.com:scrubdev/scrubdev-web.git && cd scrubdev-web # or your fork
 $ npm install
-$ ./node_modules/.bin/webpack
+$ npm run build
 $ node index.js
+
+# navigate to http://localhost:3000/
 ```
 
 ## Contributing
