@@ -45,19 +45,18 @@ html, body {
 
 /* NAV DRAWER BOTTOM */
 .drawer--centerbottom .drawer-nav {
-    top: -100%;
-    left: 0;
+    bottom: 100%;
     width: 100%;
     height: auto;
     max-height: 100%;
-    z-indexwebkit-transition: top .6s cubic-bezier(.17, .67, 1, .29);
-    transition: top .6s cubic-bezier(.17, .67, 1, .29);
+    z-indexwebkit-transition: bottom .6s cubic-bezier(0.190, 1.000, 0.220, 1.000);
+    transition: bottom .6s cubic-bezier(0.190, 1.000, 0.220, 1.000);
+    text-align: center;
 }
 
 .drawer--centerbottom.drawer-open .drawer-nav {
-    top: auto;
     bottom: 0;
-    text-align: center;
+    top: auto;
     padding-bottom: 75px;
 }
 

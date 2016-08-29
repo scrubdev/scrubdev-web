@@ -24,6 +24,5 @@ Router.map(routes);
 
 Router.start(App, "body");
 
-
-const drawer = $(".drawer")
+const drawer = $(".drawer");
 drawer.drawer();
