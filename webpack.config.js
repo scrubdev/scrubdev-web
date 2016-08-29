@@ -14,7 +14,7 @@ const config = {
         loaders: [
             { test: /\.vue$/, loader: "vue" },
             { test: /\.js$/, exclude: /node_modules/, loader: "babel" },
-            { test: /\.css$/, loader: "style!css" },
+            { test: /\.css$/, loader: ExtractTextPlugin.extract("style-loader", "css-loader") },
 
             // https://gist.github.com/Turbo87/e8e941e68308d3b40ef6 - font awesome font loading
             { test: /\.woff(\?v=\d+\.\d+\.\d+)?$/, loader: "url?limit=10000&mimetype=application/font-woff" },
@@ -30,9 +30,7 @@ const config = {
             jQuery: "jquery",
             IScroll: "iscroll"
         }),
-        new ExtractTextPlugin({
-            filename: "build.css"
-        })
+        new ExtractTextPlugin("bundle.css")
     ]
 };
 
