@@ -35,3 +35,6 @@ Router.start(App, "body");
 
 const drawer = $(".drawer");
 drawer.drawer();
+
+// LOADED.
+$("body").addClass("ready");
