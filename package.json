@@ -1,49 +1,53 @@
 {
-  "name": "scrubdev-web",
-  "version": "0.1.0",
-  "description": "Web - scrubdev",
-  "main": "index.js",
-  "scripts": {
-    "build": "./node_modules/.bin/webpack"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/nicholastay/scrubdev.git"
-  },
-  "author": "Nicholas Tay <nexerq@gmail.com> (http://nicholastay.github.io)",
-  "bugs": {
-    "url": "https://github.com/nicholastay/scrubdev/issues"
-  },
-  "homepage": "https://github.com/nicholastay/scrubdev#readme",
-  "dependencies": {
-    "babel": "^6.5.2",
-    "babel-plugin-add-module-exports": "^0.2.1",
-    "babel-preset-es2015": "^6.14.0",
-    "babel-register": "^6.14.0",
-    "chalk": "^1.1.3",
-    "ejs": "^2.5.1",
-    "express": "^4.14.0",
-    "fast-strftime": "^1.1.1",
-    "morgan": "^1.7.0"
-  },
-  "devDependencies": {
-    "babel-plugin-transform-runtime": "^6.12.0",
-    "babel-loader": "^6.2.5",
-    "css-loader": "^0.24.0",
-    "extract-text-webpack-plugin": "^1.0.1",
-    "file-loader": "^0.9.0",
-    "font-awesome": "^4.6.3",
-    "iscroll": "^5.2.0",
-    "jquery": "^3.1.0",
-    "jquery-drawer": "^3.2.0",
-    "style-loader": "^0.13.1",
-    "url-loader": "^0.5.7",
-    "vue": "^0.12.10",
-    "vue-html-loader": "^1.2.3",
-    "vue-loader": "^8.5.2",
-    "vue-resource": "^0.9.3",
-    "vue-router": "^0.7.13",
-    "vue-style-loader": "^1.0.0",
-    "webpack": "^1.13.2",
-  }
+    "name": "scrubdev-web",
+    "version": "0.1.0",
+    "description": "Web Frontend for the Automation System Project.",
+    "main": "index.js",
+    "scripts": {
+        "build": "./node_modules/.bin/webpack"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/scrubdev/scrubdev-web.git"
+    },
+    "author": "scrubdev Team",
+    "contributors": [
+        "Nicholas Tay <nexerq@gmail.com> (http://nicholastay.github.io)"
+    ],
+    "license": "AGPL-3.0",
+    "bugs": {
+        "url": "https://github.com/scrubdev/scrubdev-web/issues"
+    },
+    "homepage": "https://github.com/scrubdev/scrubdev-web#readme",
+    "dependencies": {
+        "babel": "^6.5.2",
+        "babel-plugin-add-module-exports": "^0.2.1",
+        "babel-preset-es2015": "^6.14.0",
+        "babel-register": "^6.14.0",
+        "chalk": "^1.1.3",
+        "ejs": "^2.5.1",
+        "express": "^4.14.0",
+        "fast-strftime": "^1.1.1",
+        "morgan": "^1.7.0"
+    },
+    "devDependencies": {
+        "babel-plugin-transform-runtime": "^6.12.0",
+        "babel-loader": "^6.2.5",
+        "css-loader": "^0.24.0",
+        "extract-text-webpack-plugin": "^1.0.1",
+        "file-loader": "^0.9.0",
+        "font-awesome": "^4.6.3",
+        "iscroll": "^5.2.0",
+        "jquery": "^3.1.0",
+        "jquery-drawer": "^3.2.0",
+        "style-loader": "^0.13.1",
+        "url-loader": "^0.5.7",
+        "vue": "^0.12.10",
+        "vue-html-loader": "^1.2.3",
+        "vue-loader": "^8.5.2",
+        "vue-resource": "^0.9.3",
+        "vue-router": "^0.7.13",
+        "vue-style-loader": "^1.0.0",
+        "webpack": "^1.13.2"
+    }
 }
