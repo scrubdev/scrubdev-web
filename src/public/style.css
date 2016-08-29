@@ -1,0 +1,145 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.hide {
+    display: none;
+}
+
+.centerup {
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+}
+
+.bg-full {
+    background: url(/static/assets/nyc-bg.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -2;
+}
+
+.inlineup {
+    display: inline;
+    vertical-align: middle;
+}
+
+.loading {
+    background-color: white;
+    height: 225px;
+    width: 450px;
+    z-index: -1;
+    opacity: 0.75;
+}
+
+
+/* NAV DRAWER BOTTOM */
+.drawer--centerbottom .drawer-nav {
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+    z-indexwebkit-transition: top .6s cubic-bezier(.17, .67, 1, .29);
+    transition: top .6s cubic-bezier(.17, .67, 1, .29);
+}
+
+.drawer--centerbottom.drawer-open .drawer-nav {
+    top: auto;
+    bottom: 0;
+    text-align: center;
+    padding-bottom: 75px;
+}
+
+.drawer--centerbottom .drawer-hamburger,
+.drawer--centerbottom.drawer-open .drawer-hamburger {
+    top: auto;
+    bottom: 0;
+    transform: translateX(-50%);
+    left: 50%;
+}
+
+.drawer-menu li a {
+    font-size: 10pt;
+}
+
+
+
+/* SLIDE TRANSITION - https://stackoverflow.com/questions/16989585/css-3-slide-in-from-left-transition as a help */
+.slide-transition {
+    opacity: 1;
+    transform: translateX(0%);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.slide-enter {
+    animation: slide-enter 1.2s forwards;
+    -webkit-animation: slide-enter 1.2s forwards;
+}
+
+.slide-leave {
+    animation: slide-leave 1.2s forwards;
+    -webkit-animation: slide-leave 1.2s forwards;
+}
+
+@keyframes slide-enter {
+    0% { opacity: 0.5; transform: translateX(100%);}
+    100% { opacity: 1; transform: translateX(0%); }
+}
+
+@-webkit-keyframes slide-enter {
+    0% { opacity: 0.5; transform: translateX(100%); }
+    100% { opacity: 1; -webkit-transform: translateX(0%); }
+}
+    
+@keyframes slide-leave {
+    0% { opacity: 1; transform: translateX(0%); }
+    100% { opacity: 0.5; transform: translateX(-100%); }
+}
+
+@-webkit-keyframes slide-leave {
+    0% { opacity: 1; -webkit-transform: translateX(0%); }
+    100% { opacity: 0.5; -webkit-transform: translateX(-100%); }
+}
+
+
+/* plane flying */
+.feiji-transition {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.feiji-leave {
+    animation: feiji-leave 6s forwards;
+    -webkit-animation: feiji-leave 6s forwards;
+}
+    
+@keyframes feiji-leave {
+    0% { opacity: 1; transform: translate(0%, 0%); }
+    100% { opacity: 0; transform: translate(100%, -100%); }
+}
+
+@-webkit-keyframes feiji-leave {
+    0% { opacity: 1; -webkit-transform: translate(0%, 0%); }
+    100% { opacity: 0; -webkit-transform: translate(100%, -100%); }
+}
+
+
+
+/* DELETE */
+table.temp th,
+table.temp td {
+    border: 1px solid #E1E1E1;
+}
