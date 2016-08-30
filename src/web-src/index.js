@@ -25,6 +25,7 @@ import $ from "jquery";
 import "jquery-drawer";
 
 // VENDOR - STYLES
+import "./vendor/raleway-font.css";
 import "./vendor/skeleton-2.0.4/normalize.css";
 import "./vendor/skeleton-2.0.4/skeleton.css";
 import "jquery-drawer/dist/css/drawer.min.css";
