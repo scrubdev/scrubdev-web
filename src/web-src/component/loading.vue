@@ -18,7 +18,6 @@
 <template>
 <div>
     <div class="load-screen">
-        <div class="bg-full"></div>
         <div class="centerup loading"></div>
 
         <div class="plane-wrap feiji-transition">
@@ -40,10 +39,17 @@ import "../stylesheet/loading.css";
 
 export default {
     ready: function() {
+        // CRAPPY JQUERY WORK AROUNDS YAY!
+        $("main").append(`<div class="bg-full"></div>`);
+
         setTimeout(() => {
             // ugh. - need a better solution than this all -- shitty hack
             $(".plane-wrap").addClass("feiji-leave");
-            setTimeout(() => this.$router.go("/home"), 1250);
+            $(".bg-full").addClass("fade-out-transition");
+            setTimeout(() => {
+                $(".bg-full").remove();
+                this.$router.go("/home");
+            }, 950);
         }, 3500);
     }
 }
