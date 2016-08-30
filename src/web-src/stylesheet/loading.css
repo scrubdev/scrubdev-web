@@ -1,0 +1,63 @@
+/*
+ * scrubdev - Web Frontend for the Automation System Project.
+ * Copyright (C) 2016 scrubdev (lead - Nicholas Tay <nexerq@gmail.com>)
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Affero General Public License as published by
+ * the Free Software Foundation, at version 3 of the License.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Affero General Public License for more details.
+
+ * You should have received a copy of the GNU Affero General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
+
+.bg-full {
+    background: url(/static/assets/nyc-bg.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -2;
+}
+
+.inlineup {
+    display: inline;
+    vertical-align: middle;
+}
+
+.loading {
+    background-color: white;
+    height: 225px;
+    width: 450px;
+    z-index: -1;
+    opacity: 0.75;
+}
+
+
+/* plane flying */
+.feiji-transition {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.feiji-leave {
+    animation: feiji-leave 6s forwards;
+    -webkit-animation: feiji-leave 6s forwards;
+}
+    
+@keyframes feiji-leave {
+    0% { opacity: 1; transform: translate(0%, 0%); }
+    100% { opacity: 0; transform: translate(100%, -100%); }
+}
+
+@-webkit-keyframes feiji-leave {
+    0% { opacity: 1; -webkit-transform: translate(0%, 0%); }
+    100% { opacity: 0; -webkit-transform: translate(100%, -100%); }
+}

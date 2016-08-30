@@ -24,12 +24,16 @@ import IScroll from "iscroll";
 import $ from "jquery";
 import "jquery-drawer";
 
-// STYLES
+// VENDOR - STYLES
 import "./vendor/skeleton-2.0.4/normalize.css";
 import "./vendor/skeleton-2.0.4/skeleton.css";
 import "jquery-drawer/dist/css/drawer.min.css";
 import "font-awesome/css/font-awesome.css";
-import "./stylesheet/style.css";
+
+// STYLES
+import "./stylesheet/main.css";
+import "./stylesheet/transition.css";
+import "./stylesheet/drawer.css";
 
 // VUE ROUTER
 import routes from "./routes";

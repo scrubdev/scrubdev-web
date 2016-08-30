@@ -4,7 +4,8 @@
     "description": "Web Frontend for the Automation System Project.",
     "main": "index.js",
     "scripts": {
-        "build": "./node_modules/.bin/webpack"
+        "build": "./node_modules/.bin/webpack",
+        "build-prod": "NODE_ENV=production ./node_modules/.bin/webpack -p --config webpack.production.config.js"
     },
     "repository": {
         "type": "git",

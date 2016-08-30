@@ -36,6 +36,8 @@
 <script>
 import $ from "jquery";
 
+import "../stylesheet/loading.css";
+
 export default {
     ready: function() {
         setTimeout(() => {
