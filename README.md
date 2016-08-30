@@ -5,7 +5,7 @@ Web Frontend for the Automation System Project.
 ```
 # Ensure git, node, npm installed.
 
-$ git clone git@github.com:scrubdev/scrubdev-web.git && cd scrubdev-web # or your fork
+$ git clone https://github.com/scrubdev/scrubdev-web.git && cd scrubdev-web # or your fork
 $ npm install
 $ npm run build
 $ node index.js
