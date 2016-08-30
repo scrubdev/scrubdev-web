@@ -17,26 +17,25 @@
 
 /* NAV DRAWER BOTTOM */
 .drawer--centerbottom .drawer-nav {
-    bottom: 100%;
+    top: 100%;
     width: 100%;
     height: auto;
     max-height: 100%;
-    z-indexwebkit-transition: bottom .6s cubic-bezier(0.190, 1.000, 0.220, 1.000);
-    transition: bottom .6s cubic-bezier(0.190, 1.000, 0.220, 1.000);
+    z-indexwebkit-transition: top .3s ease-in-out;
+    transition: top .3s ease-in-out;
     text-align: center;
 }
 
 .drawer--centerbottom.drawer-open .drawer-nav {
-    bottom: 0;
-    top: auto;
-    padding-bottom: 75px;
+    top: calc(100% - 235px); /* crap-ish as need to change this everytime add item to drawer workaround */
+    padding-bottom: 48px;
 }
 
 .drawer--centerbottom .drawer-hamburger,
 .drawer--centerbottom.drawer-open .drawer-hamburger {
     top: auto;
     bottom: 0;
-    transform: translateX(-50%);
+    transform: translate(-50%, 20px);
     left: 50%;
 }
 

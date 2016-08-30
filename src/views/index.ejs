@@ -25,6 +25,7 @@
         body.ready { visibility: visible }
         </style>
 
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="/static/build/bundle.css">
     </head>
     <body class="drawer drawer--centerbottom">
@@ -49,6 +50,9 @@
 
                 <router-view class="slide" transition="slide"></router-view>
           </main>
+
+          <!-- hamburger menu is put in the center of this but we style -->
+          <div class="footer"></div>
 
         <script type="text/javascript" src="/static/build/bundle.js"></script>
     </body>

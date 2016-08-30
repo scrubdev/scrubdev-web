@@ -34,6 +34,22 @@ html, body {
     text-align: center;
 }
 
+.footer {
+    background-color: white;
+    bottom: 0;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+}
+
+.footer:before {
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 1.5px;
+    background: grey;
+}
+
 
 /* DELETE - TEMP PLACEHOLD. */
 table.temp th,
