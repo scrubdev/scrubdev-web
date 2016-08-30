@@ -36,18 +36,18 @@
             <nav class="drawer-nav" role="navigation">
                 <ul class="drawer-menu">
                     <li><span class="drawer-brand" style="font-size: 12pt;">scrubdev alpha test v0.1.0</span></li>
-                    <li><a class="drawer-menu-item" v-link="'/home'" v-on="click: hidedrawer"><i class="fa fa-home" aria-hidden="true"></i> Dashboard</a></li>
-                    <li><a class="drawer-menu-item" v-link="'favorites'" v-on="click: hidedrawer"><i class="fa fa-heart-o" aria-hidden="true"></i> Favorites</a></li>
-                    <li><a class="drawer-menu-item" href="" v-on="click: hidedrawer"><i class="fa fa-cog" aria-hidden="true"></i> Settings</a></li>
+                    <li><a class="drawer-menu-item" v-link="'/home'" @click="hidedrawer"><i class="fa fa-home" aria-hidden="true"></i> Dashboard</a></li>
+                    <li><a class="drawer-menu-item" v-link="'favorites'" @click="hidedrawer"><i class="fa fa-heart-o" aria-hidden="true"></i> Favorites</a></li>
+                    <li><a class="drawer-menu-item" href="" @click="hidedrawer"><i class="fa fa-cog" aria-hidden="true"></i> Settings</a></li>
                 </ul>
             </nav>
           </header>
           <main role="main">
-                <div class="head inlineup" v-if="this.$route.path !== '/'" v-transition="slide" style="position: inherit;">
+                <div class="head inlineup" v-if="this.$route.path !== '/'" transition="slide" style="position: inherit;">
                     <img src="/static/assets/header.png" alt="scrubdev" style="height: 95px; margin-top: 10px; margin-left: 5px;">
                 </div>
 
-                <router-view class="slide" v-transition="slide"></router-view>
+                <router-view class="slide" transition="slide"></router-view>
           </main>
 
         <script type="text/javascript" src="/static/build/bundle.js"></script>

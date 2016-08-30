@@ -49,7 +49,7 @@ const App = Vue.extend({
     }
 });
 
-const Router = new VueRouter({});
+const Router = new VueRouter({ transitionOnLoad: true });
 Router.map(routes);
 
 Router.start(App, "body");

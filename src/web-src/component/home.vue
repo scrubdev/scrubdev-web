@@ -162,8 +162,8 @@
         <div class="row" style="margin-top: 25px;">
             <h4><i class="fa fa-circle-o" aria-hidden="true"></i> Status</h4>
         </div>
-        <div class="row" style="margin-left: 45px; color: orange;">
-            All systems dead inside and cannot be woken up.
+        <div class="row" style="margin-left: 45px;" v-bind:style="{ color: statusColor }">
+            {{ statusMsg }}
         </div>
     </div>
 </div>
@@ -171,8 +171,15 @@
 
 <script>
 export default {
+    data: function() {
+        return {
+            statusMsg: "",
+            statusColor: "black"
+        };
+    },
     ready: function() {
-        
+        this.statusMsg = "All systems dead inside and cannot be woken up.";
+        this.statusColor = "orange";
     }
 }
 </script>
