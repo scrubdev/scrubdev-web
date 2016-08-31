@@ -24,7 +24,7 @@
             <img src="/static/assets/plane.png" class="centerup" alt="scrubdev" height="125px">
         </div>
 
-        <div style="color: yellowgreen; top: calc(50% + 50px);" class="centerup">
+        <div style="color: #DE4AE7; top: calc(50% + 50px);" class="centerup">
             <i class="fa fa-cog fa-spin fa-3x fa-fw"></i>
             <span class="sr-only">Loading...</span>
         </div>

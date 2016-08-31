@@ -19,7 +19,7 @@
 <div>
     <div class="container">
         <div class="row">
-            <h3><i class="fa fa-cogs" aria-hidden="true"></i> Dashboard</h3>
+            <h3><i class="fa fa-home" aria-hidden="true"></i> Dashboard</h3>
         </div>
 
         <div class="row" style="margin-left: 45px;">
