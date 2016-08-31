@@ -157,6 +157,10 @@
                     <td> </td>
                 </tr>
             </table>
+
+            <input type="button" value="Go Home" style="margin-right: 3px;">
+            <input type="button" v-if="muteStatus" value="Unmute Mic" @click="toggleMute">
+            <input type="button" v-if="!muteStatus" value="Mute Mic" @click="toggleMute">
         </div>
 
         <div class="row" style="margin-top: 25px;">
@@ -174,12 +178,18 @@ export default {
     data: function() {
         return {
             statusMsg: "",
-            statusColor: "black"
+            statusColor: "black",
+            muteStatus: false
         };
     },
     ready: function() {
         this.statusMsg = "All systems dead inside and cannot be woken up.";
         this.statusColor = "orange";
+    },
+    methods: {
+        toggleMute: function() {
+            this.muteStatus = !this.muteStatus;
+        }
     }
 }
 </script>
