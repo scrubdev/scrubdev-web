@@ -1,0 +1,9 @@
+node.js express <--> frontend sockets.io
+    Basically:
+        The packet sent from express to sockets.io should be informed of which view to send it to, and if the user is on that view listen to the event and update the frontend. The event should be named "scrubdev.<view-name>". 
+
+        If the user switches view the frontend should make an api request to express to get the latest cached data which express end should know from tcp comms.
+
+        If the sockets.io connection is lost, the vue.js view should switch back to the loading screen with a reconnecting symbol/text until connection is reestablished.
+
+        If there is an existing connection it should not allow the second client to connect, or connect under a spectate view. One person controlling at a time.
