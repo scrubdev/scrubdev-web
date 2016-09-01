@@ -1,0 +1,32 @@
+body.dark {
+    background-color: #2C2C2A;
+    color: #FFFFFF;
+}
+
+body.dark .button,
+body.dark button,
+body.dark input[type="submit"],
+body.dark input[type="reset"],
+body.dark input[type="button"],
+body.dark .button:hover,
+body.dark button:hover,
+body.dark input[type="submit"]:hover,
+body.dark input[type="reset"]:hover,
+body.dark input[type="button"]:hover,
+body.dark .drawer-brand,
+body.dark .drawer-menu-item {
+    color: #FFFFFF;
+}
+
+body.dark .footer {
+    background-color: inherit;
+}
+
+body.dark .drawer-hamburger {
+    filter: invert(1);
+    -webkit-filter: invert(1);
+}
+
+body.dark .drawer-nav {
+    background-color: #434341;
+}

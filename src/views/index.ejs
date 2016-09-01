@@ -48,7 +48,7 @@
 
         <link rel="stylesheet" type="text/css" href="/static/build/bundle.css">
     </head>
-    <body class="drawer drawer--centerbottom">
+    <body class="drawer drawer--centerbottom" v-bind:class="{ 'dark': darkTheme }">
         <header role="banner">
             <button type="button" class="drawer-toggle drawer-hamburger" v-show="this.$route.path !== '/'">
                 <span class="sr-only">toggle navigation</span>

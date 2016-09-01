@@ -35,6 +35,7 @@ import "font-awesome/css/font-awesome.css";
 import "./stylesheet/main.css";
 import "./stylesheet/transition.css";
 import "./stylesheet/drawer.css";
+import "./stylesheet/dark_theme.css";
 
 // VUE ROUTER
 import routes from "./routes";
@@ -43,6 +44,11 @@ Vue.use(VueRouter);
 Vue.use(VueResource);
 
 const App = Vue.extend({
+    data: function() {
+        return {
+            darkTheme: (localStorage.getItem("scrubdev.interface.dark") === "true" ? true : false)
+        };
+    },
     methods: {
         hidedrawer: function() {
             $(".drawer").drawer("close");
