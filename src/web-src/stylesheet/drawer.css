@@ -42,3 +42,62 @@
 .drawer-menu li a {
     font-size: 10pt;
 }
+
+
+
+
+/* second drawer - must be unique class but theres no styling for it o_o */
+/* modified from source */
+
+.options-drawer-nav {
+    position: fixed;
+    z-index: 101;
+    top: 0;
+    overflow: hidden;
+    width: 70%;
+    height: 100%;
+    color: #222;
+    background-color: #fff;
+}
+
+.drawer--right .options-drawer-nav {
+    right: -70%;
+    -webkit-transition: right .6s cubic-bezier(0.190, 1.000, 0.220, 1.000);
+    transition: right .6s cubic-bezier(0.190, 1.000, 0.220, 1.000);
+}
+
+.drawer--right.drawer-open .options-drawer-nav {
+    right: 0;
+}
+
+.options-drawer-open .drawer-hamburger-icon {
+    background-color: transparent;
+}
+
+@media (min-width: 64em) {
+    .drawer--sidebar .options-drawer-nav {
+        display: block;
+        -webkit-transform: none;
+        -ms-transform: none;
+        transform: none;
+        position: fixed;
+        width: 12.5rem;
+        height: 100%;
+    }
+
+    /*! Right */
+    .drawer--sidebar.drawer--right .options-drawer-nav {
+        right: 0;
+        border-left: 1px solid #ddd;
+    }
+
+    .drawer--sidebar.drawer--right .drawer-contents {
+        margin-right: 12.5rem;
+    }
+}
+
+@media (min-width: 75em) {
+    .drawer--sidebar .options-drawer-nav {
+        width: 16.25rem;
+    }
+}

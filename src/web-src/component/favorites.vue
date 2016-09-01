@@ -35,12 +35,12 @@
                     <tr>
                         <td>Kitchen</td>
                         <td>(69, 420)</td>
-                        <td><i class="fa fa-cog" aria-hidden="true"></i></td>
+                        <td><i class="pointy fa fa-cog" aria-hidden="true" @click="$root.toggleOptions"></i></td>
                     </tr>
                     <tr>
                         <td>The Bedroom :^)</td>
                         <td>(1337, 360)</td>
-                        <td><i class="fa fa-cog" aria-hidden="true"></i></td>
+                        <td><i class="pointy fa fa-cog" aria-hidden="true" @click="$root.toggleOptions"></i></td>
                     </tr>
                 </tbody>
             </table>

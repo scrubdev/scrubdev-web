@@ -46,12 +46,21 @@ Vue.use(VueResource);
 const App = Vue.extend({
     data: function() {
         return {
-            darkTheme: (localStorage.getItem("scrubdev.interface.dark") === "true" ? true : false)
+            darkTheme: (localStorage.getItem("scrubdev.interface.dark") === "true" ? true : false),
+            optionsDrawer: false
         };
     },
     methods: {
         hidedrawer: function() {
-            $(".drawer").drawer("close");
+            $(".main-drawer").drawer("close");
+        },
+        toggleOptions: function() {
+            if (!this.optionsDrawer)
+                $(".options-drawer").drawer("open");
+            else
+                $(".options-drawer").drawer("close");
+
+            this.optionsDrawer = !this.optionsDrawer;
         }
     }
 });
@@ -61,8 +70,14 @@ Router.map(routes);
 
 Router.start(App, "body");
 
-const drawer = $(".drawer");
-drawer.drawer();
+$(".main-drawer").drawer();
+$(".options-drawer").drawer({
+    class: {
+        nav: "options-drawer-nav",
+        toggle: "options-drawer-toggle",
+        dropdown: "options-drawer-dropdown"
+    }
+});
 
 // LOADED.
 $("body").addClass("ready");

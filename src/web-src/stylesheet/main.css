@@ -51,6 +51,10 @@ html, body {
     vertical-align: top;
 }
 
+i.pointy {
+    cursor: pointer;
+}
+
 /* DELETE - TEMP PLACEHOLD. */
 table.temp th,
 table.temp td {
