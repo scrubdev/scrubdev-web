@@ -37,7 +37,7 @@ html, body {
 .footer {
     background-color: white;
     bottom: 0;
-    height: 80px;
+    height: 65px;
     width: 100%;
     position: fixed;
 }
@@ -48,10 +48,7 @@ html, body {
     width: 100%;
     height: 1.5px;
     background: grey;
-}
-
-main {
-    margin-bottom: 75px;
+    vertical-align: top;
 }
 
 
