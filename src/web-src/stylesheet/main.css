@@ -50,6 +50,10 @@ html, body {
     background: grey;
 }
 
+main {
+    margin-bottom: 75px;
+}
+
 
 /* DELETE - TEMP PLACEHOLD. */
 table.temp th,

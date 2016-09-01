@@ -22,7 +22,7 @@
             <h3><i class="fa fa-heart-o" aria-hidden="true"></i> Favorites</h3>
         </div>
 
-        <div class="row" style="margin-left: 45px;">
+        <div class="row" style="margin-left: 25px;">
             <table class="u-full-width">
                 <thead>
                     <tr>
