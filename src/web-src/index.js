@@ -24,6 +24,9 @@ import IScroll from "iscroll";
 import $ from "jquery";
 import "jquery-drawer";
 
+// SOCKETS
+import io from "socket.io-client";
+
 // VENDOR - STYLES
 import "./vendor/raleway-font.css";
 import "./vendor/skeleton-2.0.4/normalize.css";
@@ -47,8 +50,15 @@ const App = Vue.extend({
     data: function() {
         return {
             darkTheme: (localStorage.getItem("scrubdev.interface.dark") === "true" ? true : false),
-            optionsDrawer: false
+            optionsDrawer: false,
+            socket: io()
         };
+    },
+    ready: function() {
+        // attach sockets
+        this.socket.on("scrubdev.test", res => {
+            console.log("socket: " + res);
+        });
     },
     methods: {
         hidedrawer: function() {
@@ -70,6 +80,8 @@ Router.map(routes);
 
 Router.start(App, "body");
 
+
+// DRAWER INIT
 $(".main-drawer").drawer();
 $(".options-drawer").drawer({
     class: {
@@ -78,6 +90,7 @@ $(".options-drawer").drawer({
         dropdown: "options-drawer-dropdown"
     }
 });
+
 
 // LOADED.
 $("body").addClass("ready");
