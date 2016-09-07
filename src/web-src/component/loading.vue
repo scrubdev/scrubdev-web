@@ -43,7 +43,7 @@ export default {
         $("main").append(`<div class="bg-full"></div>`);
 
         setTimeout(() => {
-            // ugh. - need a better solution than this all -- shitty hack
+            // ugh. - need a better solution than this all -- hack xdxd
             $(".plane-wrap").addClass("feiji-leave");
             $(".bg-full").addClass("fade-out-transition");
             setTimeout(() => {
