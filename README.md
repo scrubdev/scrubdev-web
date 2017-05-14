@@ -17,4 +17,4 @@ $ node index.js
 Pull requests are only being accepted by `scrubdev` team members as of now. Issues can be reported and are much appreciated.
 
 ## License
-Licensed under AGPL v3. Full license text can be found in the root of the repository.
+MIT

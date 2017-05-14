@@ -15,7 +15,7 @@
   "contributors": [
     "Nicholas Tay <nexerq@gmail.com> (http://nicholastay.github.io)"
   ],
-  "license": "AGPL-3.0",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/scrubdev/scrubdev-web/issues"
   },
